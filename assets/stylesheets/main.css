@@ -1,3 +1,22 @@
 body{
     text-align: center;
 }
+h1{
+    color: rgb(175, 85, 85);
+}
+h4{
+    color: rgb(34, 209, 151);
+}
+.container1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    grid-gap: 15px;
+}
+.item{
+    border: 1px solid black;
+    display: grid;
+    place-content: center;
+}

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Can_you_do</title>
-
     <!-- select multiple code -->
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -34,12 +33,12 @@
         </div>
         <div>
             <h3>Add Topic</h3>
-            <input type="text" name="" id="">
-            <input type="submit" name="" id="">
+            <input type="text" name="" id="topic-text">
+            <input type="submit" name="" id="submit-topic">
         </div>
         <div>
             <h3>Add Question</h3>
-            <input type="text" name="" id="">
+            <input type="text" name="" id="question-text">
 
             <select id="lstFruits" multiple="multiple">
                 <option value="1">HTML</option>
@@ -51,17 +50,7 @@
             <input type="button" id="btnSelected" value="SUBMIT" />
         </div>
     </section>
-
-    <script type="text/javascript">
-        $('#btnSelected').click(function () {
-            var selected = $("#lstFruits option:selected");
-            var message = "";
-            selected.each(function () {
-                message += $(this).text() + " " + $(this).val() + "\n";
-            });
-            alert(message);
-        });
-    </script>
+    <script src="admin.js"></script>
 </body>
 
 </html>
